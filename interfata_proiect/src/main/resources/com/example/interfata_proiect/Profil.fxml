@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.shape.Circle?>
+<?import javafx.scene.shape.Rectangle?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+<?import org.kordamp.ikonli.javafx.FontIcon?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="700.0" prefWidth="400.0" style="-fx-background-color: #005B00;" stylesheets="@style.css" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.interfata_proiect.Profil">
+    <children>
+        <Rectangle fx:id="reg1" arcHeight="5.0" arcWidth="5.0" fill="#004800" height="100.0" layoutX="-5.0" layoutY="608.0" stroke="#ffed00" strokeType="INSIDE" width="409.0" />
+        <Button fx:id="transferbani" layoutX="47.0" layoutY="639.0" mnemonicParsing="false" onAction="#Transfer" style="-fx-background-color: #004800;">
+            <graphic>
+                <FontIcon iconColor="#ffed00" iconLiteral="bi-arrow-left-right" iconSize="30" />
+            </graphic>
+        </Button>
+        <Button fx:id="acasa" layoutX="172.0" layoutY="632.0" mnemonicParsing="false" onAction="#home" style="-fx-background-color: #004800;">
+            <graphic>
+                <FontIcon fill="#004800" iconColor="#ffed00" iconLiteral="bi-house-door" iconSize="40" text="" wrappingWidth="40.0" />
+            </graphic>
+        </Button>
+        <Button fx:id="card" layoutX="306.0" layoutY="639.0" mnemonicParsing="false" style="-fx-background-color: #004800;">
+            <graphic>
+                <FontIcon iconColor="#ffed00" iconLiteral="fa-credit-card-alt" iconSize="30" />
+            </graphic>
+        </Button>
+      <Circle fill="#005b00" layoutX="200.0" layoutY="68.0" radius="31.0" stroke="#ffed00" strokeType="INSIDE" strokeWidth="3.0" />
+      <Text fx:id="username" fill="#ffed00" layoutX="178.0" layoutY="78.0" strokeType="OUTSIDE" strokeWidth="0.0" text="AA" wrappingWidth="46.39999999999998">
+         <font>
+            <Font name="Times New Roman" size="30.0" />
+         </font>
+      </Text>
+      <Label layoutX="58.0" layoutY="155.0" prefHeight="34.0" prefWidth="247.0" style="-fx-border-color: #ffed00; -fx-border-radius: 20; tex: 0;" text="Nume:" textFill="#ffed00">
+         <font>
+            <Font name="Times New Roman" size="16.0" />
+         </font>
+      </Label>
+      <Label layoutX="58.0" layoutY="290.0" prefHeight="34.0" prefWidth="247.0" style="-fx-border-color: #ffed00; -fx-border-radius: 20;" text="Data Nasterii:" textFill="#ffed00">
+         <font>
+            <Font name="Times New Roman" size="16.0" />
+         </font>
+      </Label>
+      <Label layoutX="58.0" layoutY="380.0" prefHeight="34.0" prefWidth="247.0" style="-fx-border-color: #ffed00; -fx-border-radius: 20; tex: 0;" text="Email:" textFill="#ffed00">
+         <font>
+            <Font name="Times New Roman" size="16.0" />
+         </font>
+      </Label>
+      <Label layoutX="58.0" layoutY="335.0" prefHeight="34.0" prefWidth="247.0" style="-fx-border-color: #ffed00; -fx-border-radius: 20; tex: 0;" text="Telefon:" textFill="#ffed00">
+         <font>
+            <Font name="Times New Roman" size="16.0" />
+         </font>
+      </Label>
+      <Label layoutX="58.0" layoutY="245.0" prefHeight="34.0" prefWidth="247.0" style="-fx-border-color: #ffed00; -fx-border-radius: 20;" text="CNP:" textFill="#ffed00">
+         <font>
+            <Font name="Times New Roman" size="16.0" />
+         </font>
+      </Label>
+      <Label layoutX="58.0" layoutY="200.0" prefHeight="34.0" prefWidth="247.0" style="-fx-border-color: #ffed00; -fx-border-radius: 20;" text="Prenume:" textFill="#ffed00">
+         <font>
+            <Font name="Times New Roman" size="16.0" />
+         </font>
+      </Label>
+      <Label layoutX="58.0" layoutY="425.0" prefHeight="34.0" prefWidth="247.0" style="-fx-border-color: #ffed00; -fx-border-radius: 20; tex: 0;" text="Cetatenie:" textFill="#ffed00">
+         <font>
+            <Font name="Times New Roman" size="16.0" />
+         </font>
+      </Label>
+      <Label alignment="TOP_LEFT" layoutX="58.0" layoutY="470.0" prefHeight="68.0" prefWidth="247.0" style="-fx-border-color: #ffed00; -fx-border-radius: 20; tex: 0;" text="Adresa:" textFill="#ffed00">
+         <font>
+            <Font name="Times New Roman" size="16.0" />
+         </font>
+      </Label>
+      <Text fx:id="Nume" fill="#ffed00" layoutX="105.0" layoutY="178.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Admin" wrappingWidth="191.6397705078125">
+         <font>
+            <Font name="Times New Roman" size="16.0" />
+         </font>
+      </Text>
+      <Text fx:id="Prenume" fill="#ffed00" layoutX="122.0" layoutY="223.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Admin" wrappingWidth="169.23980712890625">
+         <font>
+            <Font name="Times New Roman" size="16.0" />
+         </font>
+      </Text>
+      <Text fx:id="CNP" fill="#ffed00" layoutX="96.0" layoutY="268.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Admin" wrappingWidth="169.23980712890625">
+         <font>
+            <Font name="Times New Roman" size="16.0" />
+         </font>
+      </Text>
+      <Text fx:id="DataNasterii" fill="#ffed00" layoutX="150.0" layoutY="313.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Admin" wrappingWidth="140.4398193359375">
+         <font>
+            <Font name="Times New Roman" size="16.0" />
+         </font>
+      </Text>
+      <Text fx:id="Telefon" fill="#ffed00" layoutX="115.0" layoutY="358.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Admin" wrappingWidth="140.4398193359375">
+         <font>
+            <Font name="Times New Roman" size="16.0" />
+         </font>
+      </Text>
+      <Text fx:id="Email" fill="#ffed00" layoutX="102.0" layoutY="402.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Admin" wrappingWidth="140.4398193359375">
+         <font>
+            <Font name="Times New Roman" size="16.0" />
+         </font>
+      </Text>
+      <Text fx:id="Cetatenie" fill="#ffed00" layoutX="125.0" layoutY="448.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Admin" wrappingWidth="140.4398193359375">
+         <font>
+            <Font name="Times New Roman" size="16.0" />
+         </font>
+      </Text>
+      <Text fx:id="Adresa" fill="#ffed00" layoutX="110.0" layoutY="487.0" strokeType="OUTSIDE" strokeWidth="0.0" text="2sjhfsuhruoshrughdurhgkjdhrgkudhrgjdhkghdkjghdkuthgkudhgjudhtughdk" wrappingWidth="181.23980712890625">
+         <font>
+            <Font name="Times New Roman" size="16.0" />
+         </font>
+      </Text>
+    </children>
+</AnchorPane>
