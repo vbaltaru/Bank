@@ -45,7 +45,7 @@
         <Rectangle fx:id="reg1" arcHeight="5.0" arcWidth="5.0" fill="#004800" height="100.0" layoutX="-5.0" layoutY="608.0" stroke="#ffed00" strokeType="INSIDE" width="409.0" />
         <Button fx:id="transferbani" layoutX="47.0" layoutY="639.0" mnemonicParsing="false" style="-fx-background-color: #004800;">
             <graphic>
-                <FontIcon iconColor="#ffed00" iconLiteral="bi-arrow-left-right" iconSize="30" />
+                <FontIcon fx:id="transfer" iconColor="#ffed00" iconLiteral="bi-arrow-left-right" iconSize="30" onDragDetected="#transfer" />
             </graphic>
         </Button>
         <Button fx:id="acasa" layoutX="172.0" layoutY="632.0" mnemonicParsing="false" onAction="#home" style="-fx-background-color: #004800;">
@@ -55,7 +55,7 @@
         </Button>
         <Button fx:id="card" layoutX="306.0" layoutY="639.0" mnemonicParsing="false" style="-fx-background-color: #004800;">
             <graphic>
-                <FontIcon iconColor="#ffed00" iconLiteral="fa-credit-card-alt" iconSize="30" />
+                <FontIcon fx:id="card" iconColor="#ffed00" iconLiteral="fa-credit-card-alt" iconSize="30" onDragDetected="#carduri" />
             </graphic>
         </Button>
         <Button fx:id="add" layoutX="175.0" layoutY="378.0" mnemonicParsing="false" onAction="#add_money" style="-fx-background-color: #ffed00; -fx-background-radius: 20;" text="Add" textFill="#005b00">

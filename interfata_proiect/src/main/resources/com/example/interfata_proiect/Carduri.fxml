@@ -1,33 +1,24 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
 <?import javafx.scene.control.Button?>
-<?import javafx.scene.control.TableColumn?>
-<?import javafx.scene.control.TableView?>
 <?import javafx.scene.layout.AnchorPane?>
 <?import javafx.scene.shape.Rectangle?>
 <?import javafx.scene.text.Font?>
 <?import javafx.scene.text.Text?>
 <?import org.kordamp.ikonli.javafx.FontIcon?>
 
-<AnchorPane prefHeight="700.0" prefWidth="400.0" style="-fx-background-color: #005B00;" stylesheets="@style.css" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.interfata_proiect.Carduri">
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="700.0" prefWidth="400.0" style="-fx-background-color: #005B00;" stylesheets="@style.css" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.interfata_proiect.Carduri">
     <children>
-        <Text fill="#ffed00" layoutX="118.0" layoutY="39.0" text="Cardurile Tale">
+        <Text fill="#ffed00" layoutX="143.0" layoutY="82.0" text="Your Card">
             <font>
                 <Font name="Times New Roman" size="28.0" />
             </font>
         </Text>
-        <Button fx:id="addCardBtn" layoutX="157.0" layoutY="528.0" mnemonicParsing="false" onAction="#addCard" style="-fx-background-color: #ffed00; -fx-text-fill: #004800; -fx-background-radius: 15;" text="Add Card">
+        <Button fx:id="addCard" layoutX="47.0" layoutY="409.0" mnemonicParsing="false" onAction="#addCard" style="-fx-background-color: #ffed00; -fx-text-fill: #004800; -fx-background-radius: 15;" text="Add Card">
             <font>
                 <Font name="Times New Roman" size="16.0" />
             </font>
         </Button>
-        <TableView fx:id="cardTable" layoutX="19.0" layoutY="74.0" prefHeight="418.0" prefWidth="366.0" style="-fx-background-radius: 15; -fx-border-radius: 15; -fx-background-color: #005B00; -fx-border-color: #005B00;">
-            <columns>
-                <TableColumn fx:id="numberCol" prefWidth="120.0" style="-fx-alignment: CENTER;" text="Number" />
-                <TableColumn fx:id="cvvCol" prefWidth="120.0" style="-fx-alignment: CENTER;" text="CVV" />
-                <TableColumn fx:id="expCol" prefWidth="120.0" style="-fx-alignment: CENTER;" text="Expiration" />
-            </columns>
-        </TableView>
         <Rectangle fx:id="reg1" arcHeight="5.0" arcWidth="5.0" fill="#004800" height="100.0" layoutX="-5.0" layoutY="608.0" stroke="#ffed00" strokeType="INSIDE" width="409.0" />
         <Button fx:id="transferbani" layoutX="47.0" layoutY="639.0" mnemonicParsing="false" onAction="#Transfer" style="-fx-background-color: #004800; -fx-background-radius: 20;">
             <graphic>
@@ -39,10 +30,20 @@
                 <FontIcon fill="#004800" iconColor="#ffed00" iconLiteral="bi-house-door" iconSize="40" text="" wrappingWidth="40.0" />
             </graphic>
         </Button>
-        <Button fx:id="card" layoutX="306.0" layoutY="639.0" mnemonicParsing="false" style="-fx-background-color: #004800; -fx-background-radius: 20;">
+        <Button fx:id="crd" layoutX="306.0" layoutY="639.0" mnemonicParsing="false" style="-fx-background-color: #004800; -fx-background-radius: 20;">
             <graphic>
                 <FontIcon iconColor="#ffed00" iconLiteral="fa-credit-card-alt" iconSize="30" />
             </graphic>
         </Button>
+      <Rectangle fx:id="card" arcHeight="50.0" arcWidth="50.0" fill="#005b00" height="172.0" layoutX="47.0" layoutY="153.0" stroke="#005b00" strokeType="INSIDE" strokeWidth="0.0" width="311.0" />
+      <FontIcon fx:id="visa" fill="#005b00" iconColor="#ffed00" iconLiteral="fa-cc-visa" iconSize="30" layoutX="70.0" layoutY="188.0" opacity="0.0" wrappingWidth="46.39999999999998" />
+      <Text fx:id="nr_card" layoutX="66.0" layoutY="309.0" strokeType="OUTSIDE" strokeWidth="0.0" />
+      <Text fx:id="data_card" layoutX="199.0" layoutY="309.0" strokeType="OUTSIDE" strokeWidth="0.0" />
+      <Text fx:id="cvv_card" layoutX="322.0" layoutY="309.0" strokeType="OUTSIDE" strokeWidth="0.0" />
+      <Button fx:id="Afis" layoutX="280.0" layoutY="409.0" mnemonicParsing="false" onAction="#Afiseaza" style="-fx-background-color: #ffed00; -fx-text-fill: #004800; -fx-background-radius: 15;" text="Details">
+         <font>
+            <Font name="Times New Roman" size="16.0" />
+         </font>
+      </Button>
     </children>
 </AnchorPane>
