@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.shape.Rectangle?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+<?import org.kordamp.ikonli.javafx.FontIcon?>
+
+<AnchorPane maxHeight="700.0" maxWidth="400.0" minHeight="700.0" minWidth="400.0" prefHeight="700.0" prefWidth="400.0" style="-fx-background-color: #005B00;" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.interfata_proiect.Meniu">
+   <children>
+      <Text fx:id="sold" fill="#ffed00" layoutX="52.0" layoutY="169.0" strokeType="OUTSIDE" strokeWidth="0.0" text="0.00" textAlignment="RIGHT" wrappingWidth="202.10003662109375">
+         <font>
+            <Font name="Times New Roman" size="45.0" />
+         </font>
+      </Text>
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#004800" height="48.0" layoutX="-7.0" layoutY="-3.0" stroke="#ffed00" strokeType="INSIDE" width="409.0" />
+      <Rectangle fx:id="reg1" arcHeight="5.0" arcWidth="5.0" fill="#004800" height="100.0" layoutX="-5.0" layoutY="608.0" stroke="#ffed00" strokeType="INSIDE" width="409.0" />
+      <Text fx:id="valuta" fill="#ffed00" layoutX="254.0" layoutY="166.0" strokeType="OUTSIDE" strokeWidth="0.0" text="RON">
+         <font>
+            <Font name="Times New Roman" size="16.0" />
+         </font>
+      </Text>
+      <Button fx:id="adauga" layoutX="180.0" layoutY="188.0" mnemonicParsing="false" onAction="#Addmoney" prefHeight="40.0" prefWidth="40.0" style="-fx-border-radius: 50; -fx-background-color: #005B00; -fx-border-color: #ffed00;">
+         <graphic>
+            <FontIcon iconColor="#ffed00" iconLiteral="bi-plus" iconSize="20" wrappingWidth="20.000060558319092" />
+         </graphic>
+      </Button>
+      <Button fx:id="transferbani" layoutX="47.0" layoutY="639.0" mnemonicParsing="false" onAction="#transfer" style="-fx-background-color: #004800;">
+         <graphic>
+            <FontIcon iconColor="#ffed00" iconLiteral="bi-arrow-left-right" iconSize="30" />
+         </graphic>
+      </Button>
+      <Button fx:id="acasa" layoutX="172.0" layoutY="632.0" mnemonicParsing="false" style="-fx-background-color: #004800;">
+         <graphic>
+            <FontIcon fill="#004800" iconColor="#ffed00" iconLiteral="bi-house-door" iconSize="40" text="" wrappingWidth="40.0" />
+         </graphic>
+      </Button>
+      <Button fx:id="card" layoutX="306.0" layoutY="639.0" mnemonicParsing="false" onAction="#Card" style="-fx-background-color: #004800;">
+         <graphic>
+            <FontIcon iconColor="#ffed00" iconLiteral="fa-credit-card-alt" iconSize="30" />
+         </graphic>
+      </Button>
+      <Button fx:id="account" layoutX="10.0" layoutY="8.0" mnemonicParsing="false" onAction="#profil" style="-fx-background-color: #004800;">
+         <graphic>
+            <FontIcon iconColor="#ffed00" iconLiteral="bi-person-fill" iconSize="25" />
+         </graphic>
+      </Button>
+      <Button fx:id="log_out" layoutX="361.0" layoutY="11.0" mnemonicParsing="false" onAction="#log_out" style="-fx-background-color: #004800;">
+         <graphic>
+            <FontIcon iconColor="#ffed00" iconLiteral="fa-power-off" iconSize="20" />
+         </graphic>
+      </Button>
+   </children>
+</AnchorPane>
